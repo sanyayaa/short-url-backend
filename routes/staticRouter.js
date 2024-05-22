@@ -9,4 +9,15 @@ router.get('/', async(req,res) => {
         urls : allurls
     })
 });
+
+router.get('/signup', async(req,res) => {
+    // const allurls = await URL.find({});
+    return res.render("signup");
+});
+
+router.get('/login', async(req,res) => {
+    // const allurls = await URL.find({});
+    return res.render("login");
+});
+
 module.exports = router;
